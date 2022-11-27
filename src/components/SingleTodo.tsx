@@ -37,6 +37,7 @@ const SingleTodo: React.FC<Props> = ({ todo, setTodos, todos }) => {
   useEffect(()=>{
     inputRef.current?.focus()
   },[edit]);
+  
 
   return (
     <form className="todos__single" onSubmit={(e) => handleEdit(e, todo.id)}>
